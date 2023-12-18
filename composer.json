@@ -1,0 +1,36 @@
+{
+    "name": "muscobytes/admitad-api-client",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Muscobytes\\AdmitadApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Muscobytes\\AdmitadApi\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muscobytes",
+            "email": "dev@muscobytes.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "muscobytes/http-client": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "nyholm/psr7": "^1.8",
+        "php-http/mock-client": "^1.5",
+        "php-http/guzzle7-adapter": "1.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
